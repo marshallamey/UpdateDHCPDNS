@@ -1,7 +1,8 @@
 # UpdateDHCPDNS.py
 
 This script takes a .csv inventory file exported from the Filemaker Pro Asset Management 
-Database and generates all necessary files for updating DHCP and DNS
+Database and generates all necessary files for updating DHCP and DNS.  The file contains
+all device names, MAC addresses, and IP addresses.
 
 The filepath variable points to the directory that contains the templates 
 folder and script
