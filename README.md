@@ -1,3 +1,5 @@
+# UpdateDHCPDNS.py
+
 This script takes a .csv inventory file exported from the Filemaker Pro Asset Management 
 Database and generates all necessary files for updating DHCP and DNS
 
@@ -23,6 +25,7 @@ file as a footer and all files are then closed.
 # Usage
 
 Once the .csv file has been exported to the working directory, start the script:
+
 `
 sudo ./StartDHCPUpdate.sh
 `
