@@ -15,10 +15,10 @@ Then, each template file is copied to the working directory with a new filename
 and the inventory.csv file exported from FileMaker is reformatted to dhcpd.csv
 
 Each device is added as a dictionary object to a list object that contains
-the full inventory.  The list is sorted by ip address.
+the full inventory.  The list is sorted by IP address.
 
 Next, all the files are opened and each device in the list is added to the 
-appropriate file(s) based on its ip address.
+appropriate file(s) based on its IP address.
 
 Finally, any remaining necessary information is appended to the db.rdschool.org
 file as a footer and all files are then closed.
