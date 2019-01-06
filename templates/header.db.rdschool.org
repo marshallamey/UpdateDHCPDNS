@@ -1,0 +1,55 @@
+; -*- zone -*-
+;; db.rdschool.org
+;;  /var/cache/bind
+
+$TTL 10800
+@       IN      SOA     ns1.rdschool.org. admin.rdschool.org. (
+                        2018122032
+                        3h
+                        1h
+                        2w
+                        1h )
+@                       IN      NS      ns1
+@                       IN      NS      ns2
+
+;; @            7200    IN      A       161.47.19.61
+;; www          7200    IN      A       161.47.19.61
+@               7200    IN      A       54.209.77.18
+www             7200    IN      CNAME   rdschool.onmessage.whipplehillsites.com.
+ftp                     IN      A       66.220.22.164
+
+@               7200    IN      MX      1       ASPMX.L.GOOGLE.COM.
+@               7200    IN      MX      5       ALT1.ASPMX.L.GOOGLE.COM.
+@               7200    IN      MX      5       ALT2.ASPMX.L.GOOGLE.COM.
+@               7200    IN      MX      10      ALT3.ASPMX.L.GOOGLE.COM.
+@               7200    IN      MX      10      ALT4.ASPMX.L.GOOGLE.COM.
+
+_domainkey              IN      TXT     "o=~"
+736F463E-59E1-11E3-86DC-B3C4A01F7615._domainkey IN TXT "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQD
+NV/PSps3p14y/FarsU+7t8RMzbzKz6Q59bsrPAoudVgMKNc+LVZQBdM/Uab35r8iQTqn3iwn3epWoxv6vOJrcE0eN5YZTnXWjzGfNAlX5ZXimqctr
+OB+jSftdlTCt47HnROhzq20FsqNgHGWupdL5DiMlapvejMKLf2j1VpJWswIDAQAB"
+
+lists                   IN      MX      10      lists
+_domainkey.lists        IN      TXT     "o=~"
+;;default._domainkey.lists      IN      TXT     "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCxQeQn4o
+6xO9D0M1GvmIQRQUi4LjPYbNpBIIItJnQKTOdCk7+uVhENsRbhppWoIPQ0zYYTjCoO6IrWwO2a/nM6eFDqRBTUX7qdzFzUSPrYy0fNknYF5KV55ty
+bZZeQd+9sGMyg8Pzh6H2xVmOZSHvXIGmAHDg+E2u9aJcprdJZoQIDAQAB"
+default._domainkey.lists        IN      TXT     "v=DKIM1; k=rsa; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3s67rPs
+HaphQ32eyaM5335BHCdbHV5+XCG1xxXkFvi7LUCT1/yZrm8vY4OZ1ssL/lmuIX0OlZUipVvZdYVQEWuSPhdx2P1jYjD9LF8xmr1hzgvidTPbgYFqO
+t7wAOeNNq82uiaP1koKRwyl5qftpZ+x5nQ+rizL7Br3pGczQw3wIDAQAB"
+
+calendar                IN      CNAME   ghs.googlehosted.com.
+docs                    IN      CNAME   ghs.googlehosted.com.
+groups                  IN      CNAME   ghs.googlehosted.com.
+mail                    IN      CNAME   ghs.googlehosted.com.
+staff                   IN      CNAME   ghs.googlehosted.com.
+start                   IN      CNAME   ghs.googlehosted.com.
+sites                   IN      CNAME   ghs.googlehosted.com.
+
+_aaplcache._tcp         259200 IN TXT   "prs=173.13.189.192-173.13.189.207"
+
+#_acme-challenge.academic.rdschool.org  IN      TXT     "653nzEIO468AkVbTAQZyEpvFlPkbGPwOP8K7K0vK-KE"
+_acme-challenge.academic        IN      TXT     "653nzEIO468AkVbTAQZyEpvFlPkbGPwOP8K7K0vK-KE"
+
+gam                     IN      A       10.0.10.4
+

@@ -1,0 +1,92 @@
+
+webserver                      IN 	 CNAME 	 timeserver
+squidserver                    IN 	 CNAME 	 timeserver2
+RuckusController               IN 	 CNAME 	 ZoneDirector
+mailman                        IN 	 CNAME 	 academic
+odmaster                       IN 	 CNAME 	 academic
+sriserver                      IN 	 CNAME 	 academic
+bellmaster                     IN 	 CNAME 	 mailmigrate
+academicserverbu               IN 	 CNAME 	 academicbu
+remotebackups                  IN 	 CNAME 	 businessserver
+winsserver                     IN 	 CNAME 	 businessserver
+books                          IN 	 CNAME 	 businessserver
+remotebackups                  IN 	 CNAME 	 businessserver
+fm12server                     IN 	 CNAME 	 filemaker
+fmpmailman                     IN 	 CNAME 	 filemaker
+time2                          IN 	 CNAME 	 squid
+nuxeo                          IN 	 CNAME 	 squid
+wpad                           IN 	 CNAME 	 squid
+time                           IN 	 CNAME 	 zimbra
+minecrafttoby                  IN 	 CNAME 	 zimbra
+theshallot                     IN 	 CNAME 	 zimbra
+www.theshallot                 IN 	 CNAME 	 zimbra
+thechatterbox                  IN 	 CNAME 	 zimbra
+www.thechatterbox              IN 	 CNAME 	 zimbra
+web                            IN 	 CNAME 	 zimbra
+writing                        IN 	 CNAME 	 zimbra
+munkireport-php                IN 	 CNAME 	 zimbra
+swupdate                       IN 	 CNAME 	 miniserver
+K8LabColor                     IN 	 CNAME 	 HPColorLaserJet
+MiddleSchoolColor              IN 	 CNAME 	 MS-HPColorLaserJet
+CiscoSPA112                    IN 	 CNAME 	 Extension329
+
+b._dns-sd._udp                 IN    PTR     rdschool.org.
+lb._dns-sd._udp                IN    PTR     rdschool.org.
+db._dns-sd._udp                IN    PTR     rdschool.org.
+
+_sips._tdp                     IN    SRV     0 1 5060 switchvox
+_sip._tdp                      IN    SRV     0 1 5060 switchvox
+_sip._udp                      IN    SRV     0 1 5060 switchvox
+
+;;
+;; From \\businessserver\windows\system32\config\netlogon.dns
+;;
+a4158667-8810-4aa2-9683-4f3e00d18bf5._msdcs                     600     IN      CNAME   businessserver
+_gc._tcp                                                        600     IN      SRV     0 100 3268 businessserver
+_gc._tcp.RedwoodDaySchool._sites                                600     IN      SRV     0 100 3268 businessserver
+_kerberos._tcp                                                  600     IN      SRV     0 100 88 businessserver
+_kerberos._tcp.RedwoodDaySchool._sites                          600     IN      SRV     0 100 88 businessserver
+_kerberos._tcp.RedwoodDaySchool._sites.dc._msdcs                600     IN      SRV     0 100 88 businessserver
+_kerberos._tcp.dc._msdcs                                        600     IN      SRV     0 100 88 businessserver
+_kerberos._udp                                                  600     IN      SRV     0 100 88 businessserver
+_kpasswd._tcp                                                   600     IN      SRV     0 100 464 businessserver
+_kpasswd._udp                                                   600     IN      SRV     0 100 464 businessserver
+_ldap._tcp                                                      600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.256a32fe-8a64-4211-84e1-4ce553e8121b.domains._msdcs  600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.DomainDnsZones                                       600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.ForestDnsZones                                       600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.RedwoodDaySchool._sites                              600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.RedwoodDaySchool._sites.DomainDnsZones               600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.RedwoodDaySchool._sites.ForestDnsZones               600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.RedwoodDaySchool._sites.dc._msdcs                    600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.RedwoodDaySchool._sites.gc._msdcs                    600     IN      SRV     0 100 3268 businessserver
+_ldap._tcp.dc._msdcs                                            600     IN      SRV     0 100 389 businessserver
+_ldap._tcp.gc._msdcs                                            600     IN      SRV     0 100 3268 businessserver
+_ldap._tcp.pdc._msdcs                                           600     IN      SRV     0 100 389 businessserver
+gc._msdcs                                                       600     IN      A       10.0.10.6
+DomainDnsZones                                                  600     IN      A       10.0.10.6
+ForestDnsZones                                                  600     IN      A       10.0.10.6
+
+;;
+;; from \\vmwindowsbdc\windows\system32\config\netlogon.dns
+;;
+2560fb5f-4f52-4e7a-9b02-4c88756b6137._msdcs                     600     IN      CNAME   businessbackup
+_gc._tcp                                                        600     IN      SRV     0 100 3268 businessbackup
+_gc._tcp.RedwoodDaySchool._sites                                600     IN      SRV     0 100 3268 businessbackup
+_kerberos._tcp                                                  600     IN      SRV     0 100 88 businessbackup
+_kerberos._tcp.RedwoodDaySchool._sites                          600     IN      SRV     0 100 88 businessbackup
+_kerberos._tcp.RedwoodDaySchool._sites.dc._msdcs                600     IN      SRV     0 100 88 businessbackup
+_kerberos._tcp.dc._msdcs                                        600     IN      SRV     0 100 88 businessbackup
+_kerberos._udp                                                  600     IN      SRV     0 100 88 businessbackup
+_kpasswd._tcp                                                   600     IN      SRV     0 100 464 businessbackup
+_kpasswd._udp                                                   600     IN      SRV     0 100 464 businessbackup
+_ldap._tcp                                                      600     IN      SRV     0 100 389 businessbackup
+_ldap._tcp.256a32fe-8a64-4211-84e1-4ce553e8121b.domains._msdcs  600     IN      SRV     0 100 389 businessbackup
+_ldap._tcp.RedwoodDaySchool._sites                              600     IN      SRV     0 100 389 businessbackup
+_ldap._tcp.RedwoodDaySchool._sites.dc._msdcs                    600     IN      SRV     0 100 389 businessbackup
+_ldap._tcp.RedwoodDaySchool._sites.gc._msdcs                    600     IN      SRV     0 100 3268 businessbackup
+_ldap._tcp.dc._msdcs                                            600     IN      SRV     0 100 389 businessbackup
+_ldap._tcp.gc._msdcs                                            600     IN      SRV     0 100 3268 businessbackup
+gc._msdcs                                                       600     IN      A       10.0.10.22
+DomainDnsZones                                                  600     IN      A       10.0.10.22
+ForestDnsZones                                                  600     IN      A       10.0.10.22

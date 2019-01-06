@@ -1,0 +1,27 @@
+;; -*- zone -*-
+;; db.189.13.173.in-addr.arpa
+;;
+$ttl 86400
+@                       IN      SOA     ns1.rdschool.org. admin.rdschool.org. (
+                        2018122020      ;serial
+                        3h
+                        1H
+                        2W
+                        1H )
+
+@                       IN      NS      ns1.rdschool.org.
+@                       IN      NS      ns2.rdschool.org.
+
+193                     IN      PTR     sonicwall.rdschool.org.
+194                     IN      PTR     synology.rdschool.org.
+195                     IN      PTR     squid.rdschool.org.
+196                     IN      PTR     busmanager.rdschool.org.
+197                     IN      PTR     filemaker.rdschool.org.
+198                     IN      PTR     terastation1.rdschool.org.
+199                     IN      PTR     zimbra.rdschool.org.
+200                     IN      PTR     web.rdschool.org.
+201                     IN      PTR     lists.rdschool.org.
+202                     IN      PTR     staffserver.rdschool.org.
+203                     IN      PTR     miniserver.rdschool.org.
+204                     IN      PTR     businessserver.rdschool.org.
+205                     IN      PTR     buwinserver.rdschool.org.

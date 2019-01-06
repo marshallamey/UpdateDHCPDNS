@@ -1,0 +1,14 @@
+;; -*- zone -*-
+;; db.2.168.192.in-addr.arpa
+;;
+$TTL 86400
+@       IN      SOA     ns1.rdschool.org. admin.rdschool.org. (
+                        2018122032      ;serial
+                        3h
+                        1h
+                        2w
+                        1h )
+
+@                       IN      NS      ns1.rdschool.org.
+@                       IN      NS      ns2.rdschool.org.
+
